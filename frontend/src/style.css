@@ -51,3 +51,28 @@ th, td { text-align: left; padding: 6px 4px; border-bottom: 1px solid #e4d7c2; f
 @media (max-width: 900px) {
   .layout, .layers { grid-template-columns: 1fr; }
 }
+
+/* 扩列：设置、列表、新键队列、字段详情 */
+.policy, .keys { border-top: 1px solid #d8c8ad; margin-top: 16px; padding-top: 14px; }
+.choices { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 10px; }
+.choice { text-align: left; background: rgba(255, 250, 242, 0.98); color: #2a241c; border: 1px solid #c4b498; display: grid; gap: 6px; }
+.choice em { font-style: normal; font-size: 13px; color: #6d6254; }
+.choice.on { box-shadow: inset 4px 0 0 #0f6e6e; border-color: #0f6e6e; }
+.choice.on:disabled { opacity: 1; cursor: default; }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 2px; }
+.tag { display: inline-block; font-size: 12px; font-style: normal; padding: 2px 7px; border-radius: 2px; background: #eee4d2; color: #6d6254; }
+.tag.wait { background: #f2e3c4; color: #7a5a15; }
+.tag.drop { background: #efdcd6; color: #8d2f24; }
+.tag.grow { background: #d8e8e2; color: #0f6e6e; }
+.tag.rival { background: #e2d8ef; color: #4e3070; }
+.tag.off { background: #f6d9c6; color: #8a4519; }
+.tag.plain { background: #e6e1d6; color: #5a5348; }
+.tag.muted { background: transparent; color: #9a8f7c; box-shadow: inset 0 0 0 1px #d8c8ad; }
+.rowline { display: flex; justify-content: space-between; align-items: center; gap: 10px; }
+.soft { color: #6d6254; font-size: 13px; }
+.ok { color: #0f6e6e; margin: 0; }
+.flag { color: #8d2f24 !important; }
+@media (max-width: 900px) {
+  .choices { grid-template-columns: 1fr; }
+}
+button.mini { padding: 3px 8px; font-size: 12px; background: #0f6e6e; }
